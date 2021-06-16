@@ -3,6 +3,11 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons";
 
+@mixin desktopResolution {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
 // Toggle global options
 $enable-gradients: true;
 $enable-shadows: true;
@@ -20,7 +25,6 @@ $spacers: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
-  6: $spacer * 10,
 );
 
 h1 {
@@ -44,15 +48,40 @@ h1 {
   }
 }
 
-#start-screen {
+.big-screen {
   height: 700px;
   background-image: url(../assets/images/Illustration.png);
   background-repeat: no-repeat;
   background-position: bottom right;
+
+  @include desktopResolution {
+    background-image: url(../assets/images/large-background.png);
+  }
+}
+
+.aboutme-screen {
+  height: 700px;
+  background-image: url(../assets/images/illustration-about-me-mobile.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+
+  @include desktopResolution {
+    background-image: url(../assets/images/AboutMe-Large.png);
+  }
+}
+
+.custom-heigth {
+  height: 500px;
 }
 
 hr {
   &light {
     color: #fff;
+  }
+}
+
+.pt {
+  &-6 {
+    margin-top: 350px;
   }
 }

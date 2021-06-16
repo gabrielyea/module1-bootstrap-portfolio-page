@@ -16245,11 +16245,40 @@ h1, .h1 {
   padding: 100px 24px 100px 24px;
 }
 
-#start-screen {
+.big-screen {
   height: 700px;
   background-image: url(../assets/images/Illustration.png);
   background-repeat: no-repeat;
   background-position: bottom right;
+}
+@media only screen and (min-width: 992px) {
+  .big-screen {
+    background-image: url(../assets/images/large-background.png);
+  }
+}
+
+.aboutme-screen {
+  height: 700px;
+  background-image: url(../assets/images/illustration-about-me-mobile.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+@media only screen and (min-width: 992px) {
+  .aboutme-screen {
+    background-image: url(../assets/images/AboutMe-Large.png);
+  }
+}
+
+.custom-heigth {
+  height: 500px;
+}
+
+hrlight {
+  color: #fff;
+}
+
+.pt-6 {
+  margin-top: 350px;
 }
 
 /*# sourceMappingURL=main.css.map */
