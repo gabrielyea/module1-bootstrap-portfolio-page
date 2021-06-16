@@ -12,12 +12,16 @@ $body-color: #333;
 $body-bg: #fff;
 $border-radius: 0.4rem;
 $success: #7952b3;
-
-// @import "~icon-list";
-
-body {
-  padding: 3rem 1.5rem;
-}
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 10,
+);
 
 h1 {
   color: $orange;
@@ -32,4 +36,17 @@ h1 {
 // Style Bootstrap icons
 .bi {
   fill: currentColor;
+}
+
+.p {
+  &-6 {
+    padding: 100px 24px 100px 24px;
+  }
+}
+
+#start-screen {
+  height: 700px;
+  background-image: url(../assets/images/Illustration.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
