@@ -16235,6 +16235,12 @@ h1, .h1 {
   color: #fd7e14;
 }
 
+.btn {
+  color: #fff;
+  background-color: #fd7e14;
+  font-weight: bold;
+}
+
 .bi {
   fill: currentColor;
 }
